@@ -5,47 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Alcoholemia</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Natan</h1>
+  <div class="cont">
+    <h1>Calculadora de alcoholemia</h1>
+    <br>
 
-    <form onsubmit="calc(event)">
+    <form onsubmit="calc(event)" class="form">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Porcentaje de Alcohol en bebida</label>
+          <label class="form-label">Porcentaje de Alcohol en bebida</label>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" aria-label="Porcentaje de Alcohol en bebida (%)">
+            <input type="number" id="ga" min="0" max="100" class="form-control" aria-label="Porcentaje de Alcohol en bebida (%)">
             <span class="input-group-text">%</span>
           </div>
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Cantidad de bebida ingerida</label>
+            <label class="form-label">Cantidad de bebida ingerida</label>
             <div class="input-group mb-3">
-              <input type="text" class="form-control" aria-label="Cantidad de bebida ingerida (ml)">
+              <input type="number" min="0" id="ml" class="form-control" aria-label="Cantidad de bebida ingerida (ml)">
               <span class="input-group-text">ml</span>
             </div>
           </div>
           <div class="btn-group" id="cuerpo" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="cuerpo" id="astenico" autocomplete="off" checked>
+            <input type="radio" class="btn-check" name="cuerpo" id="astenico" value="astenico" autocomplete="off" checked>
             <label class="btn btn-outline-primary" for="astenico">Asténico</label>
           
-            <input type="radio" class="btn-check" name="cuerpo" id="atletico" autocomplete="off">
+            <input type="radio" class="btn-check" name="cuerpo" id="atletico" value="atletico" autocomplete="off">
             <label class="btn btn-outline-primary" for="atletico">Atlético</label>
           
-            <input type="radio" class="btn-check" name="cuerpo" id="picnico" autocomplete="off">
+            <input type="radio" class="btn-check" name="cuerpo" id="picnico" value="picnico" autocomplete="off">
             <label class="btn btn-outline-primary" for="picnico">Pícnico</label>
           </div>
           <br><br>
           <div class="btn-group" id="cuerpo" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="sexo" id="hombre" autocomplete="off" checked>
+            <input type="radio" class="btn-check" name="sexo" value="hombre" id="hombre" autocomplete="off" checked>
             <label class="btn btn-outline-primary" for="hombre">Hombre</label>
           
-            <input type="radio" class="btn-check" name="sexo" id="mujer" autocomplete="off">
+            <input type="radio" class="btn-check" name="sexo" value="mujer" id="mujer" autocomplete="off">
             <label class="btn btn-outline-danger" for="mujer">Mujer</label>
           </div>
-          <br><br><br>
+          <div class="mb-3">
+            <label class="form-label">Peso</label>
+            <div class="input-group mb-3">
+              <input type="number" min="0" id="peso" class="form-control" aria-label="Peso (ml)">
+              <span class="input-group-text">kg</span>
+            </div>
+          </div>
+          <br>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+  </div>
     
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
