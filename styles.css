@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+.container {
+    display: grid;
+    flex-basis: 100vh;
+}
+.section {
+    /* background-position: center;
+    background-size: cover; */
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.section img {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(80%);
+    object-fit: cover;
+}
+
+.section:hover img {
+    filter: brightness(120%);
+    transform: scale(1.3);
+}
+
+/* #alcohol {
+    background-image: url("https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/04/opening-beer-bottle-1296x728-header.jpg?w=1155&h=1528");
+    
+} */
+#soap {
+    /* background-image: url("http://www.beautissence.com/images/blog/saponificacion-en-frio.jpg"); */
+    position: absolute;
+    left: 50vw;
+}
+
+.bg {
+    height: 60px;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+
+#bg-alc {
+    background-color: rgb(196, 213, 208, 0.75);    
+}
+
+#bg-soap {
+    background-color: rgb(175, 155, 144, 0.75);
+}
+
+.page-title {
+    text-align: center;
+    width: 50vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: white;
+}
