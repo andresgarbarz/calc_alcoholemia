@@ -1,0 +1,13 @@
+.center {
+    background-image: url("http://www.beautissence.com/images/blog/saponificacion-en-frio.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    min-height: 100vh;
+}
+
+#g {
+    color: white;
+}
