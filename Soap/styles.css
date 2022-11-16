@@ -10,4 +10,9 @@
 
 #g {
     color: white;
+    background-color: rgba(26, 26, 26, 0.35);
+    border-radius: 10px;
+    height: 100%;
+    width: fit-content;
+    padding: 5px 5px 5px 5px;
 }
